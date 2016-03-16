@@ -1,4 +1,13 @@
-﻿using System;
+﻿/* 
+ * Copyright (C) Joni Korkiakoski
+ * 
+ * This file is part of the my school project.
+ * 
+ * Created: <<16.3.2016>> 
+ * Authors: <<Joni Korkiakoski>> 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
