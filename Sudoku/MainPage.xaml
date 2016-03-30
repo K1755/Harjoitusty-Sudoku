@@ -5,10 +5,13 @@
     xmlns:local="using:Sudoku"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Width="1280"
+    Height="720"
+    >
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center">
-        
+        <!--Defining rows for sudokus grid-->
         <Grid.RowDefinitions>
             <RowDefinition Height="60"></RowDefinition>
             <RowDefinition Height="60"></RowDefinition>
@@ -20,7 +23,7 @@
             <RowDefinition Height="60"></RowDefinition>
             <RowDefinition Height="60"></RowDefinition>
         </Grid.RowDefinitions>
-
+        <!--Defining columns for sudokus grid-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="60" ></ColumnDefinition>
             <ColumnDefinition Width="60"></ColumnDefinition>
@@ -34,90 +37,91 @@
         </Grid.ColumnDefinitions>
         
         <!--<Border BorderThickness="3" BorderBrush="Black" Grid.RowSpan="9" Grid.ColumnSpan="9">-->
-            
-        <TextBox Text="0" Grid.Row="0" Grid.Column="0"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="0"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="0"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="0"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="0"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="0"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="0"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="0"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="0"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="0"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="1"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="2"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="3"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="4"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="5"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="6"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="7"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="8"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="1"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="2"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="3"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="4"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="5"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="6"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="7"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="8"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="1"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="2"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="3"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="4"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="5"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="6"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="7"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="8"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="1"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="2"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="3"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="4"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="5"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="6"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="7"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="8"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="1"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="2"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="3"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="4"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="5"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="6"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="7"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="8"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="1"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="2"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="3"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="4"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="5"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="6"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="7"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="8"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="1"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="2"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="3"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="4"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="5"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="6"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="7"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="8"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="1"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="2"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="3"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="4"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="5"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="6"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="7"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="8"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="1"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="2"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="3"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="4"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="5"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="6"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="7"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="8"/>
+         
+        <!--Sudoku grid-->
+        <TextBox x:Name="r1c1" Text="0" Grid.Row="0" Grid.Column="0" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="1" Grid.Column="0" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="2" Grid.Column="0" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="3" Grid.Column="0" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="4" Grid.Column="0" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="5" Grid.Column="0" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="6" Grid.Column="0" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="7" Grid.Column="0" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="8" Grid.Column="0" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="0" Grid.Column="1" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="0" Grid.Column="2" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="0" Grid.Column="3" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="0" Grid.Column="4" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="0" Grid.Column="5" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="0" Grid.Column="6" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="0" Grid.Column="7" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="0" Grid.Column="8" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="1" Grid.Column="1" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="1" Grid.Column="2" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="1" Grid.Column="3" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="1" Grid.Column="4" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="1" Grid.Column="5" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="1" Grid.Column="6" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="1" Grid.Column="7" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="1" Grid.Column="8" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="2" Grid.Column="1" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="2" Grid.Column="2" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="8" Grid.Row="2" Grid.Column="3" IsReadOnly="True"/>
+        <TextBox Text="0" Grid.Row="2" Grid.Column="4" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="2" Grid.Column="5" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="2" Grid.Column="6" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="2" Grid.Column="7" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="2" Grid.Column="8" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="3" Grid.Column="1" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="3" Grid.Column="2" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="3" Grid.Column="3" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="3" Grid.Column="4" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="3" Grid.Column="5" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="3" Grid.Column="6" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="3" Grid.Column="7" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="3" Grid.Column="8" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="4" Grid.Column="1" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="4" Grid.Column="2" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="4" Grid.Column="3" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="4" Grid.Column="4" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="4" Grid.Column="5" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="4" Grid.Column="6" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="4" Grid.Column="7" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="4" Grid.Column="8" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="5" Grid.Column="1" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="5" Grid.Column="2" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="5" Grid.Column="3" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="5" Grid.Column="4" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="5" Grid.Column="5" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="5" Grid.Column="6" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="5" Grid.Column="7" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="5" Grid.Column="8" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="6" Grid.Column="1" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="6" Grid.Column="2" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="6" Grid.Column="3" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="6" Grid.Column="4" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="8" Grid.Row="6" Grid.Column="5" IsReadOnly="True"/>
+        <TextBox Text="0" Grid.Row="6" Grid.Column="6" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="6" Grid.Column="7" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="6" Grid.Column="8" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="7" Grid.Column="1" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="8" Grid.Row="7" Grid.Column="2" IsReadOnly="True"/>
+        <TextBox Text="0" Grid.Row="7" Grid.Column="3" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="7" Grid.Column="4" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="7" Grid.Column="5" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="7" Grid.Column="6" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="7" Grid.Column="7" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="7" Grid.Column="8" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="8" Grid.Column="1" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="8" Grid.Column="2" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="8" Grid.Column="3" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="8" Grid.Column="4" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="8" Grid.Column="5" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="8" Grid.Column="6" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="8" Grid.Column="7" KeyDown="r1c1_KeyDown"/>
+        <TextBox Text="0" Grid.Row="8" Grid.Column="8" KeyDown="r1c1_KeyDown"/>
 
         <!-- </Border>-->
     </Grid>
+    <!--Works harder you lazy bastard. >:/-->
 </Page>

@@ -5,6 +5,7 @@
  * 
  * Created: <<16.3.2016>> 
  * Authors: <<Joni Korkiakoski>> 
+ * v0.3
  */
 
 using System;
@@ -27,7 +28,7 @@ using Windows.UI.Xaml.Navigation;
 namespace Sudoku
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// Sudoku page
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -35,5 +36,27 @@ namespace Sudoku
         {
             this.InitializeComponent();
         }
+
+        private void r1c1_KeyDown(object sender, KeyRoutedEventArgs e)
+        {
+            //TextBox textBox = sender as TextBox;
+
+            //Checking if input is correct type
+            int num;
+
+             if (int.TryParse(r1c1.Text, out num))
+            {
+
+            }
+             else
+            {
+
+            }
+
+
+
+
+        }
     }
+    //JUST DO IT! >:O
 }
