@@ -39,7 +39,7 @@
         <!--<Border BorderThickness="3" BorderBrush="Black" Grid.RowSpan="9" Grid.ColumnSpan="9">-->
          
         <!--Sudoku grid-->
-        <TextBox x:Name="r1c1" Text="0" Grid.Row="0" Grid.Column="0" KeyDown="r1c1_KeyDown"/>
+        <TextBox x:Name="r1c1" Text="0" Grid.Row="0" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
         <TextBox Text="0" Grid.Row="1" Grid.Column="0" KeyDown="r1c1_KeyDown"/>
         <TextBox Text="0" Grid.Row="2" Grid.Column="0" KeyDown="r1c1_KeyDown"/>
         <TextBox Text="0" Grid.Row="3" Grid.Column="0" KeyDown="r1c1_KeyDown"/>
