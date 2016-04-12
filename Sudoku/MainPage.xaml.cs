@@ -5,11 +5,12 @@
  * 
  * Created: <<16.3.2016>> 
  * Authors: <<Joni Korkiakoski>> 
- * v0.3
+ * v0.4
  */
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -39,23 +40,25 @@ namespace Sudoku
 
         private void r1c1_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            //TextBox textBox = sender as TextBox;
+            TextBox textBox = sender as TextBox;
 
             //Checking if input is correct type
             int num;
 
-             if (int.TryParse(r1c1.Text, out num))
+            if (int.TryParse(textBox.Text, out num))
             {
 
             }
              else
             {
-
+                
             }
 
+        }
 
-
-
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
     //JUST DO IT! >:O

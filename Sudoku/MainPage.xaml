@@ -35,93 +35,97 @@
             <ColumnDefinition Width="60"></ColumnDefinition>
             <ColumnDefinition Width="60"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        
+
         <!--<Border BorderThickness="3" BorderBrush="Black" Grid.RowSpan="9" Grid.ColumnSpan="9">-->
-         
+
         <!--Sudoku grid-->
-        <TextBox x:Name="r1c1" Text="0" Grid.Row="0" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="0" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="1" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="8" Grid.Row="2" Grid.Column="3" IsReadOnly="True" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="2" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="3" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="4" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="5" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="8" Grid.Row="6" Grid.Column="5" IsReadOnly="True" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="6" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="8" Grid.Row="7" Grid.Column="2" IsReadOnly="True" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="7" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
-        <TextBox Text="0" Grid.Row="8" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox00" Text="" Grid.Row="0" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox01" Text="" Grid.Row="1" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox02" Text="" Grid.Row="2" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox03" Text="" Grid.Row="3" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox04" Text="" Grid.Row="4" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox05" Text="" Grid.Row="5" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox06" Text="" Grid.Row="6" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox07" Text="" Grid.Row="7" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox08" Text="" Grid.Row="8" Grid.Column="0" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox09" Text="" Grid.Row="0" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox10" Text="" Grid.Row="0" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox11" Text="" Grid.Row="0" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox12" Text="" Grid.Row="0" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox13" Text="" Grid.Row="0" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox14" Text="" Grid.Row="0" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox15" Text="" Grid.Row="0" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox16" Text="" Grid.Row="0" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox17" Text="" Grid.Row="1" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox18" Text="" Grid.Row="1" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox19" Text="" Grid.Row="1" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox20" Text="" Grid.Row="1" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox21" Text="" Grid.Row="1" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox22" Text="" Grid.Row="1" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox23" Text="" Grid.Row="1" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox24" Text="" Grid.Row="1" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox25" Text="" Grid.Row="2" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox26" Text="" Grid.Row="2" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox27" Text="8" Grid.Row="2" Grid.Column="3" IsReadOnly="True" MaxLength="1"/>
+        <TextBox x:Name="Textbox28" Text="" Grid.Row="2" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox29" Text="" Grid.Row="2" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox30" Text="" Grid.Row="2" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox31" Text="" Grid.Row="2" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox32" Text="" Grid.Row="2" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox33" Text="" Grid.Row="3" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox34" Text="" Grid.Row="3" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox35" Text="" Grid.Row="3" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox36" Text="" Grid.Row="3" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox37" Text="" Grid.Row="3" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox38" Text="" Grid.Row="3" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox39" Text="" Grid.Row="3" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox40" Text="" Grid.Row="3" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox41" Text="" Grid.Row="4" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox42" Text="" Grid.Row="4" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox43" Text="" Grid.Row="4" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox44" Text="" Grid.Row="4" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox45" Text="" Grid.Row="4" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox46" Text="" Grid.Row="4" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox47" Text="" Grid.Row="4" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox48" Text="" Grid.Row="4" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox49" Text="" Grid.Row="5" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox50" Text="" Grid.Row="5" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox51" Text="" Grid.Row="5" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox52" Text="" Grid.Row="5" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox53" Text="" Grid.Row="5" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox54" Text="" Grid.Row="5" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox55" Text="" Grid.Row="5" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox56" Text="" Grid.Row="5" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox57" Text="" Grid.Row="6" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox58" Text="" Grid.Row="6" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox59" Text="" Grid.Row="6" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox60" Text="" Grid.Row="6" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox61" Text="8" Grid.Row="6" Grid.Column="5" IsReadOnly="True" MaxLength="1"/>
+        <TextBox x:Name="Textbox62" Text="" Grid.Row="6" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox63" Text="" Grid.Row="6" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox64" Text="" Grid.Row="6" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox65" Text="" Grid.Row="7" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox66" Text="8" Grid.Row="7" Grid.Column="2" IsReadOnly="True" MaxLength="1"/>
+        <TextBox x:Name="Textbox67" Text="" Grid.Row="7" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox68" Text="" Grid.Row="7" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox69" Text="" Grid.Row="7" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox70" Text="" Grid.Row="7" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox71" Text="" Grid.Row="7" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox72" Text="" Grid.Row="7" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox73" Text="" Grid.Row="8" Grid.Column="1" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox74" Text="" Grid.Row="8" Grid.Column="2" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox75" Text="" Grid.Row="8" Grid.Column="3" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox76" Text="" Grid.Row="8" Grid.Column="4" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox77" Text="" Grid.Row="8" Grid.Column="5" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox78" Text="" Grid.Row="8" Grid.Column="6" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox79" Text="" Grid.Row="8" Grid.Column="7" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <TextBox x:Name="Textbox80" Text="" Grid.Row="8" Grid.Column="8" KeyDown="r1c1_KeyDown" MaxLength="1"/>
+        <StackPanel HorizontalAlignment="Left" Height="540" Margin="-250,0,0,0" Grid.RowSpan="9" VerticalAlignment="Top" Width="220" Background="White">
+            <Button Width="100" Height="50"  Margin="62,250,0,125" Background="Lavender" Content="Check" Click="Button_Click"/>
+        </StackPanel>
 
         <!-- </Border>-->
     </Grid>
-    <!--Works harder you lazy bastard. >:/-->
+
+    <!--Work harder you lazy bastard. >:/-->
 </Page>
