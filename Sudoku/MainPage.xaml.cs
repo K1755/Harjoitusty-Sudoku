@@ -5,7 +5,7 @@
  * 
  * Created: <<16.3.2016>> 
  * Authors: <<Joni Korkiakoski>> 
- * v0.4
+ * v0.4.5
  */
 
 using System;
@@ -58,7 +58,25 @@ namespace Sudoku
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            int[,] array = new int[9, 9];
+
+            array[0, 0] = 10;
+
+            foreach (Object control in Gridi.Children)
+            {
+                if (control is TextBox)
+                {
+                    TextBox textBox = (TextBox)control;
+                    int value;
+                    bool result = int.TryParse(textBox.Text, out value);
+                    // oliko numero
+                    if (result)
+                    {
+                        Debug.WriteLine(value);
+                    }
+                }
+            }
+       
         }
     }
     //JUST DO IT! >:O

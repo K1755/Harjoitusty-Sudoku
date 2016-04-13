@@ -10,7 +10,7 @@
     Height="720"
     >
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Grid x:Name="Gridi" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center">
         <!--Defining rows for sudokus grid-->
         <Grid.RowDefinitions>
             <RowDefinition Height="60"></RowDefinition>
