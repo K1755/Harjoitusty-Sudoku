@@ -5,7 +5,7 @@
  * 
  * Created: <<16.3.2016>> 
  * Authors: <<Joni Korkiakoski>> 
- * v0.4.5
+ * v0.4.6
  */
 
 using System;
@@ -72,12 +72,17 @@ namespace Sudoku
                     // oliko numero
                     if (result)
                     {
+                        if(value >= 1 || value <= 9)
+                        {
+                            
+                        }
+
                         Debug.WriteLine(value);
                     }
                 }
             }
-       
         }
+
     }
-    //JUST DO IT! >:O
 }
+    //JUST DO IT! >:O
