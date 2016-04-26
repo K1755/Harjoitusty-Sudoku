@@ -5,7 +5,7 @@
  * 
  * Created: <<16.3.2016>> 
  * Authors: <<Joni Korkiakoski>> 
- * v0.4.7
+ * v0.4.8
  */
 
 using System;
@@ -60,6 +60,7 @@ namespace Sudoku
         {
             //Sudoku array
             int[,] array = new int[9, 9];
+            /*int[,][,] arrayJagged = new int[3,3][3,3]*/
 
             //array[0, 0] = 1;
 
@@ -70,11 +71,9 @@ namespace Sudoku
                     TextBox textBox = (TextBox)control;
                     int value;
 
-                    
-
                     bool result = int.TryParse(textBox.Text, out value);
 
-                    for(value = 0; ; )
+                    for(value = 0; value <= 9; )
                     {
 
                     }
@@ -92,6 +91,7 @@ namespace Sudoku
 
 }
 //JUST DO IT! >:O
+//Opettele kommentoimaan. >:/
 
 /*if ()
 {
